@@ -11,3 +11,4 @@
 | Bobby Quilacio | bobby-dq     | quilacio |
 
 ### Project Part 2 Deliverables
+- [Mockups and Storyboard](https://github.com/CMPUT301W24T27/NoStack/wiki/User-Interface-Mockup-and-Storyboard)
