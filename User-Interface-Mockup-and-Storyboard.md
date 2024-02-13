@@ -5,4 +5,5 @@
 ![User Interface Mockup v0](https://github.com/CMPUT301W24T27/NoStack/assets/64939298/805461c5-9227-4a23-86e2-080961b2ffa3)
 
 ## Storyboard
-![Storyboard v0](https://github.com/CMPUT301W24T27/NoStack/assets/64939298/aa3d054d-ce9f-42fd-a18a-405cb15f86e6)
+![Storyboard v0](https://github.com/CMPUT301W24T27/NoStack/assets/64939298/ea7837ed-bd56-4ede-8caf-25800be2d829)
+
