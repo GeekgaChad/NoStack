@@ -6,33 +6,33 @@
 | Handles authentication and user sessions  | Content Cell  |
 | Displays appropriate pages based on user roles  |  |
 
-***
+### LogIn
+| Responsibilities | Collaborators |
+| ------------- | ------------- |
+| Display a login form to users  | MainActivity  |
+| Accept user credentials  | Organizer  |
+|  | Attendee  |
+| Validate user input   |   |
+| Redirect authenticated users to the appropriate page based on their role  | Admin  |
+
 ### Profile
 | Responsibilities | Collaborators |
 | ------------- | ------------- |
 | Contain and display a user’s personal info  | Attendee, |
 | Manage profile picture upload and deletion | Organizer|
 | Generate a profile picture from the profile name  | Admin |
-|                                                 | UploadImages|
-|                                                 | Image|
-
+|                                                 | ManageImages|
+|                                                 | Images|
 
 ### Admin
 | Responsibilities | Collaborators |
 | ------------- | ------------- |
 | Browse and display Profiles, Events, and Images  | Profile  |
 |  | Event  |
-|  | Image  |
+|  | Images  |
 | Remove Profiles, Events, and Images  | Profile  |
 |  | Event  |
-|  | Image  |
-
-### Organizer
-| Responsibilities | Collaborators |
-| ------------- | ------------- |
-| Be able to generate a unique QR code for the event  | QRCodeGenerator  |
-| Monitor real-time attendance through the AttendeeList  | AttendeeList  |
-| Sends push notifications to all attendees through the app  | Notifications  |
+|  | Images  |
 
 ### Attendee
 | Responsibilities | Collaborators |
@@ -66,12 +66,19 @@
 | ------------- | ------------- |
 | Connects to the AttendeeList Firebase Firestore database  | QRAttendeeListDB  |
 
+### Organizer
+| Responsibilities | Collaborators |
+| ------------- | ------------- |
+| Be able to generate a unique QR code for the event  | QRCodeGenerator  |
+| Monitor real-time attendance through the AttendeeList  | AttendeeList  |
+| Sends push notifications to all attendees through the app  | Notifications  |
+
 ### Event
 | Responsibilities | Collaborators |
 | ------------- | ------------- |
 | Contains information on an event (name, dates, location, description, QR code)  | Organizer  |
 |  | QRCodeDB  |
-| Contain images for the event profile  | Image  |
+| Contain images for the event profile  | Images  |
 | Generate a QR code or have the ability to reuse one  | QR code generator  |
 |  | QRCodeDB  |
 | Has a unique AttendeeList  | AttendeeList  |
@@ -109,23 +116,23 @@
 | ------------- | ------------- |
 | Connects to the Firebase Firestore database  | QRcodeDB  |
 
-### ManageImages
-| Responsibilities | Collaborators |
-| ------------- | ------------- |
-| Upload images  | UploadImage  |
-|  | Image  |
-| Delete any images uploaded to the app  | Image  |
-| View images / display images on profiles or events  | Profile  |
-|  | Event  |
-|  | Image  |
-
 ### Images
 | Responsibilities | Collaborators |
 | ------------- | ------------- |
-| Hold image data  | UploadImage  |
+| Hold image data  | ManageImages  |
 |  | Attendee  |
 |  | Event  |
 |  | Organizer  |
+
+### ManageImages
+| Responsibilities | Collaborators |
+| ------------- | ------------- |
+| Upload images  | Image  |
+| Delete any images uploaded to the app  | Images  |
+| View images / display images on profiles or events  | Profile  |
+|  | Event  |
+|  | Images  |
+
 
 ### Maps
 | Responsibilities | Collaborators |
@@ -142,12 +149,4 @@
 | Manages organizer interaction to edit/delete notification  | Organizer  |
 | Manages attendee interaction to to ignore, or view notification in app  | Attendee  |
 
-### LogIn
-| Responsibilities | Collaborators |
-| ------------- | ------------- |
-| Display a login form to users  | MainActivity  |
-| Accept user credentials  | Organizer  |
-|  | Attendee  |
-| Validate user input   |   |
-| Redirect authenticated users to the appropriate page based on their role  | Admin  |
 
