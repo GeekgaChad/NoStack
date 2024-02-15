@@ -11,6 +11,6 @@
 | Bobby Quilacio | bobby-dq     | quilacio |
 
 ### Project Part 2 Deliverables
-- [Use Case Specifications (User Stories)](https://github.com/CMPUT301W24T27/NoStack/wiki/Use-Case-Specifications)
+- [Use Case Specifications (User Stories)](https://github.com/orgs/CMPUT301W24T27/projects/1)
 - [CRC Cards](https://github.com/CMPUT301W24T27/NoStack/wiki/CRC-Cards)
 - [User Interface Mockups and Storyboard](https://github.com/CMPUT301W24T27/NoStack/wiki/User-Interface-Mockup-and-Storyboard)
