@@ -1,4 +1,4 @@
-# Event
+# CRC Cards
 ### Main Activity
 | Responsibilities | Collaborators |
 | ------------- | ------------- |
@@ -37,9 +37,11 @@
 ### Event
 | Responsibilities | Collaborators |
 | ------------- | ------------- |
-| Contains information on an event (name, dates, location, description, QR code)  | Organizer, QRCodeDB  |
+| Contains information on an event (name, dates, location, description, QR code)  | Organizer  |
+|  | QRCodeDB  |
 | Contain images for the event profile  | Image  |
-| Generate a QR code or have the ability to reuse one  | QR code generator, QRCodeDB  |
+| Generate a QR code or have the ability to reuse one  | QR code generator  |
+|  | QRCodeDB  |
 | Has a unique AttendeeList  | AttendeeList  |
 
 ### QRCode
