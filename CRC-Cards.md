@@ -78,10 +78,21 @@
 | ------------- | ------------- |
 | Contains information on an event (name, dates, location, description, QR code)  | Organizer  |
 |  | QRCodeDB  |
+| Display event poster  | Images  |
 | Contain images for the event profile  | Images  |
 | Generate a QR code or have the ability to reuse one  | QR code generator  |
 |  | QRCodeDB  |
 | Has a unique AttendeeList  | AttendeeList  |
+| Optionally set limit for number of attendees that can sign up  | AttendeeList  |
+
+
+### Milestones
+| Responsibilities | Collaborators |
+| ------------- | ------------- |
+| Notify organizer about milestone reached | Organizer  |
+|  | Notifications  |
+| Set milestones  |   |
+| Contain all milestones  |   |
 
 ### QRCode
 | Responsibilities | Collaborators |
