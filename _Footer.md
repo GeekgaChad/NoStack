@@ -16,18 +16,12 @@
 |                                                 | UploadImages|
 |                                                 | Image|
 
-### Profile
-| Responsibilities | Collaborators |
-| ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
 
 ### Admin
 | Responsibilities | Collaborators |
 | ------------- | ------------- |
-| Browse and display Profiles, Events, and Images  | Profiles |
-| Remove Profiles, Events, and Images  | Events |
-|                                      | Image |
+| Browse and display Profiles, Events, and Images  | Profiles, Events, and Images  |
+| Remove Profiles, Events, and Images  | Profiles, Events, and Images  |
 
 ### Organizer
 | Responsibilities | Collaborators |
@@ -70,11 +64,49 @@
 | Updates QR codes in the Firebase Firestore database  | QRCodeConnector  |
 | Deletes QR codes in the Firebase FIrestore database  | QRCodeConnector  |
 
-### Profile
+### QRCodeConnector
+| Responsibilities | Collaborators |
+| ------------- | ------------- |
+| Connects to the Firebase Firestore database  | QRcodeDB  |
+
+### ManageImages
+| Responsibilities | Collaborators |
+| ------------- | ------------- |
+| Upload images  | UploadImage, Image  |
+| Delete any images uploaded to the app  | Images  |
+| View images / display images on profiles or events  | Profile, Events, Images  |
+
+### Images
+| Responsibilities | Collaborators |
+| ------------- | ------------- |
+| Hold image data  | UploadImage, Attendee, Event, Organizer  |
+
+### Maps
+| Responsibilities | Collaborators |
+| ------------- | ------------- |
+| Display geographical information of attendees and events  | Attendees, Event, Organizer  |
+| Be able to be enabled or disabled  |   |
+
+### Notifications
 | Responsibilities | Collaborators |
 | ------------- | ------------- |
 | Content Cell  | Content Cell  |
 | Content Cell  | Content Cell  |
+
+### Notifications
+| Responsibilities | Collaborators |
+| ------------- | ------------- |
+| Sends notifications to attendees   | AttendeeList  |
+| Manages organizer interaction to edit/delete notification  | Organizer  |
+| Manages attendee interaction to to ignore, or view notification in app  | Attendee  |
+
+### LogIn
+| Responsibilities | Collaborators |
+| ------------- | ------------- |
+| Display a login form to users  | MainActivity  |
+| Accept user credentials  | Organizer, Attendee  |
+| Validate user input   |   |
+| Redirect authenticated users to the appropriate page based on their role  | Admin  |
 
 ### Profile
 | Responsibilities | Collaborators |
