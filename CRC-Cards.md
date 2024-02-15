@@ -3,16 +3,17 @@
 | Responsibilities | Collaborators |
 | ------------- | ------------- |
 | Manages the main user interface and navigation within the app  | Profile  |
-| Handles authentication and user sessions  | Content Cell  |
-| Displays appropriate pages based on user roles  |  |
+| Handles authentication and user sessions  | LogIn  |
+| Displays appropriate pages based on user roles  | Organizer Pages  |
+|  | Admin Pages  |
+|  | Attendee Pages  |
 
 ### LogIn
 | Responsibilities | Collaborators |
 | ------------- | ------------- |
 | Display a login form to users  | MainActivity  |
 | Accept user credentials  | Organizer  |
-|  | Attendee  |
-| Validate user input   |   |
+| Validate user input   | Attendee  |
 | Redirect authenticated users to the appropriate page based on their role  | Admin  |
 
 ***
@@ -32,12 +33,8 @@
 | Responsibilities | Collaborators |
 | ------------- | ------------- |
 | Browse and display Profiles, Events, and Images  | Profile  |
-|  | Event  |
+| Remove Profiles, Events, and Images  | Event  |
 |  | Images  |
-| Remove Profiles, Events, and Images  | Profile  |
-|  | Event  |
-|  | Images  |
-
 ***
 
 ### Attendee
@@ -46,25 +43,22 @@
 | Scan the QR code using the QRcode scanner  | QRCodeScanner  |
 | Be able to edit profile  | Profile  |
 | Receive Notifications  | AttendeeList  |
-|  | Notifications  |
 | Register for events | Event  |
+|  | Announcements  |
 
 ### AttendeeList
 | Responsibilities | Collaborators |
 | ------------- | ------------- |
 | Shows a list of checked in attendees  | Attendee  |
-|  | QRCodeScanner  |
-| Shows the amount of time an attendee has checked in  | Attendee  |
-|  | QRCodeScanner  |
+| Shows the amount of time an attendee has checked in  | QRCodeScanner  |
 | Shows where the attendees are checking in from  | AttendeeList  |
-|  | QRCodeScanner  |
 
 ### AttendeeListDB
 | Responsibilities | Collaborators |
 | ------------- | ------------- |
 | Stores a new Attendee in the Firebase Firestore database  | AttendeeListConnector  |
-| Updates Attendee in the Firebase Firestore database  | AttendeeListConnector  |
-| Deletes Attendee in the Firebase FIrestore database  | AttendeeListConnector  |
+| Updates Attendee in the Firebase Firestore database  |   |
+| Deletes Attendee in the Firebase FIrestore database  |  |
 
 ### AttendeeListDBConnector
 | Responsibilities | Collaborators |
@@ -78,27 +72,24 @@
 | ------------- | ------------- |
 | Be able to generate a unique QR code for the event  | QRCodeGenerator  |
 | Monitor real-time attendance through the AttendeeList  | AttendeeList  |
-| Sends push notifications to all attendees through the app  | Notifications  |
+| Sends push notifications to all attendees through the app  | Announcements  |
 
 ### Event
 | Responsibilities | Collaborators |
 | ------------- | ------------- |
 | Contains information on an event (name, dates, location, description, QR code)  | Organizer  |
-|  | QRCodeDB  |
-| Display event poster  | Images  |
+| Display event poster  | QRCodeDB  |
 | Contain images for the event profile  | Images  |
-| Generate a QR code or have the ability to reuse one  | QR code generator  |
-|  | QRCodeDB  |
+| Generate a QR code or have the ability to reuse one  | QRCodeGenerator  |
 | Has a unique AttendeeList  | AttendeeList  |
-| Optionally set limit for number of attendees that can sign up  | AttendeeList  |
+| Optionally set limit for number of attendees that can sign up  |   |
 
 
 ### Milestones
 | Responsibilities | Collaborators |
 | ------------- | ------------- |
 | Notify organizer about milestone reached | Organizer  |
-|  | Notifications  |
-| Set milestones  |   |
+| Set milestones  | Announcements  |
 | Contain all milestones  |   |
 
 ***
@@ -115,7 +106,7 @@
 | ------------- | ------------- |
 | Generate a unique QR code for organizers  | QRCodeDB  |
 | Have each QR code be connected to an event  | Events  |
-| Retain previous QR codes for reuse  | QRCodeDB  |
+| Retain previous QR codes for reuse  |   |
 
 ### QRCodeScanner
 | Responsibilities | Collaborators |
@@ -128,8 +119,8 @@
 | Responsibilities | Collaborators |
 | ------------- | ------------- |
 | Stores a new QR code in the Firebase Firestore database | QRCodeConnector  |
-| Updates QR codes in the Firebase Firestore database  | QRCodeConnector  |
-| Deletes QR codes in the Firebase Firestore database  | QRCodeConnector  |
+| Updates QR codes in the Firebase Firestore database  |   |
+| Deletes QR codes in the Firebase Firestore database  |   |
 
 ### QRCodeConnector
 | Responsibilities | Collaborators |
@@ -150,10 +141,8 @@
 | Responsibilities | Collaborators |
 | ------------- | ------------- |
 | Upload images  | Image  |
-| Delete any images uploaded to the app  | Images  |
+| Delete any images uploaded to the app  | Event  |
 | View images / display images on profiles or events  | Profile  |
-|  | Event  |
-|  | Images  |
 
 ***
 
@@ -161,11 +150,10 @@
 | Responsibilities | Collaborators |
 | ------------- | ------------- |
 | Display geographical information of attendees and events  | Attendee  |
-|  | Event  |
+| Be able to be enabled or disabled  | Event  |
 |  | Organizer  |
-| Be able to be enabled or disabled  |   |
 
-### Notifications
+### Announcements
 | Responsibilities | Collaborators |
 | ------------- | ------------- |
 | Sends notifications to attendees   | AttendeeList  |
