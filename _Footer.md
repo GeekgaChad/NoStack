@@ -20,8 +20,12 @@
 ### Admin
 | Responsibilities | Collaborators |
 | ------------- | ------------- |
-| Browse and display Profiles, Events, and Images  | Profiles, Events, and Images  |
-| Remove Profiles, Events, and Images  | Profiles, Events, and Images  |
+| Browse and display Profiles, Events, and Images  | Profile  |
+|  | Event  |
+|  | Image  |
+| Remove Profiles, Events, and Images  | Profile  |
+|  | Event  |
+|  | Image  |
 
 ### Organizer
 | Responsibilities | Collaborators |
@@ -41,8 +45,9 @@
 ### QRCode
 | Responsibilities | Collaborators |
 | ------------- | ------------- |
-| Contains a unique QR code  | QRCodeScanner, Organizer, MainActivity  |
-| Content Cell  | Content Cell  |
+| Contains a unique QR code  | QRCodeScanner  |
+|  | Organizer  |
+|  | MainActivity  |
 
 ### QRCodeGenerator
 | Responsibilities | Collaborators |
@@ -54,7 +59,9 @@
 ### QRCodeScanner
 | Responsibilities | Collaborators |
 | ------------- | ------------- |
-| Check attendees into the event  | Attendee, QRCode  |
+| Check attendees into the event  | Attendee  |
+|  | QRCode  |
+
 
 
 ### QRCodeDB
@@ -62,7 +69,7 @@
 | ------------- | ------------- |
 | Stores a new QR code in the Firebase Firestore database | QRCodeConnector  |
 | Updates QR codes in the Firebase Firestore database  | QRCodeConnector  |
-| Deletes QR codes in the Firebase FIrestore database  | QRCodeConnector  |
+| Deletes QR codes in the Firebase Firestore database  | QRCodeConnector  |
 
 ### QRCodeConnector
 | Responsibilities | Collaborators |
@@ -72,26 +79,28 @@
 ### ManageImages
 | Responsibilities | Collaborators |
 | ------------- | ------------- |
-| Upload images  | UploadImage, Image  |
-| Delete any images uploaded to the app  | Images  |
-| View images / display images on profiles or events  | Profile, Events, Images  |
+| Upload images  | UploadImage  |
+|  | Image  |
+| Delete any images uploaded to the app  | Image  |
+| View images / display images on profiles or events  | Profile  |
+|  | Event  |
+|  | Image  |
 
 ### Images
 | Responsibilities | Collaborators |
 | ------------- | ------------- |
-| Hold image data  | UploadImage, Attendee, Event, Organizer  |
+| Hold image data  | UploadImage  |
+|  | Attendee  |
+|  | Event  |
+|  | Organizer  |
 
 ### Maps
 | Responsibilities | Collaborators |
 | ------------- | ------------- |
-| Display geographical information of attendees and events  | Attendees, Event, Organizer  |
+| Display geographical information of attendees and events  | Attendee  |
+|  | Event  |
+|  | Organizer  |
 | Be able to be enabled or disabled  |   |
-
-### Notifications
-| Responsibilities | Collaborators |
-| ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
 
 ### Notifications
 | Responsibilities | Collaborators |
@@ -104,9 +113,22 @@
 | Responsibilities | Collaborators |
 | ------------- | ------------- |
 | Display a login form to users  | MainActivity  |
-| Accept user credentials  | Organizer, Attendee  |
+| Accept user credentials  | Organizer  |
+|  | Attendee  |
 | Validate user input   |   |
 | Redirect authenticated users to the appropriate page based on their role  | Admin  |
+
+### AttendeeListDB
+| Responsibilities | Collaborators |
+| ------------- | ------------- |
+| Stores a new Attendee in the Firebase Firestore database  | AttendeeListConnector  |
+| Updates Attendee in the Firebase Firestore database  | AttendeeListConnector  |
+| Deletes Attendee in the Firebase FIrestore database  | AttendeeListConnector  |
+
+### AttendeeListDBConnector
+| Responsibilities | Collaborators |
+| ------------- | ------------- |
+| Connects to the AttendeeList Firebase Firestore database  | QRAttendeeListDB  |
 
 ### Profile
 | Responsibilities | Collaborators |
