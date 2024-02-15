@@ -15,6 +15,8 @@
 | Validate user input   |   |
 | Redirect authenticated users to the appropriate page based on their role  | Admin  |
 
+***
+
 ### Profile
 | Responsibilities | Collaborators |
 | ------------- | ------------- |
@@ -23,6 +25,8 @@
 | Generate a profile picture from the profile name  | Admin |
 |                                                 | ManageImages|
 |                                                 | Images|
+
+***
 
 ### Admin
 | Responsibilities | Collaborators |
@@ -33,6 +37,8 @@
 | Remove Profiles, Events, and Images  | Profile  |
 |  | Event  |
 |  | Images  |
+
+***
 
 ### Attendee
 | Responsibilities | Collaborators |
@@ -53,7 +59,6 @@
 | Shows where the attendees are checking in from  | AttendeeList  |
 |  | QRCodeScanner  |
 
-
 ### AttendeeListDB
 | Responsibilities | Collaborators |
 | ------------- | ------------- |
@@ -65,6 +70,8 @@
 | Responsibilities | Collaborators |
 | ------------- | ------------- |
 | Connects to the AttendeeList Firebase Firestore database  | QRAttendeeListDB  |
+
+***
 
 ### Organizer
 | Responsibilities | Collaborators |
@@ -93,6 +100,8 @@
 |  | Notifications  |
 | Set milestones  |   |
 | Contain all milestones  |   |
+
+***
 
 ### QRCode
 | Responsibilities | Collaborators |
@@ -127,6 +136,8 @@
 | ------------- | ------------- |
 | Connects to the Firebase Firestore database  | QRcodeDB  |
 
+***
+
 ### Images
 | Responsibilities | Collaborators |
 | ------------- | ------------- |
@@ -144,6 +155,7 @@
 |  | Event  |
 |  | Images  |
 
+***
 
 ### Maps
 | Responsibilities | Collaborators |
