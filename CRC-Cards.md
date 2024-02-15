@@ -34,6 +34,38 @@
 | Monitor real-time attendance through the AttendeeList  | AttendeeList  |
 | Sends push notifications to all attendees through the app  | Notifications  |
 
+### Attendee
+| Responsibilities | Collaborators |
+| ------------- | ------------- |
+| Scan the QR code using the QRcode scanner  | QRCodeScanner  |
+| Be able to edit profile  | Profile  |
+| Receive Notifications  | AttendeeList  |
+|  | Notifications  |
+| Register for events | Event  |
+
+### AttendeeList
+| Responsibilities | Collaborators |
+| ------------- | ------------- |
+| Shows a list of checked in attendees  | Attendee  |
+|  | QRCodeScanner  |
+| Shows the amount of time an attendee has checked in  | Attendee  |
+|  | QRCodeScanner  |
+| Shows where the attendees are checking in from  | AttendeeList  |
+|  | QRCodeScanner  |
+
+
+### AttendeeListDB
+| Responsibilities | Collaborators |
+| ------------- | ------------- |
+| Stores a new Attendee in the Firebase Firestore database  | AttendeeListConnector  |
+| Updates Attendee in the Firebase Firestore database  | AttendeeListConnector  |
+| Deletes Attendee in the Firebase FIrestore database  | AttendeeListConnector  |
+
+### AttendeeListDBConnector
+| Responsibilities | Collaborators |
+| ------------- | ------------- |
+| Connects to the AttendeeList Firebase Firestore database  | QRAttendeeListDB  |
+
 ### Event
 | Responsibilities | Collaborators |
 | ------------- | ------------- |
@@ -63,7 +95,6 @@
 | ------------- | ------------- |
 | Check attendees into the event  | Attendee  |
 |  | QRCode  |
-
 
 
 ### QRCodeDB
@@ -120,20 +151,3 @@
 | Validate user input   |   |
 | Redirect authenticated users to the appropriate page based on their role  | Admin  |
 
-### AttendeeListDB
-| Responsibilities | Collaborators |
-| ------------- | ------------- |
-| Stores a new Attendee in the Firebase Firestore database  | AttendeeListConnector  |
-| Updates Attendee in the Firebase Firestore database  | AttendeeListConnector  |
-| Deletes Attendee in the Firebase FIrestore database  | AttendeeListConnector  |
-
-### AttendeeListDBConnector
-| Responsibilities | Collaborators |
-| ------------- | ------------- |
-| Connects to the AttendeeList Firebase Firestore database  | QRAttendeeListDB  |
-
-### Profile
-| Responsibilities | Collaborators |
-| ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
