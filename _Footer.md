@@ -25,8 +25,9 @@
 ### Admin
 | Responsibilities | Collaborators |
 | ------------- | ------------- |
-| Browse and display Profiles, Events, and Images  | Profiles, Events, and Images  |
-| Remove Profiles, Events, and Images  | Profiles, Events, and Images  |
+| Browse and display Profiles, Events, and Images  | Profiles |
+| Remove Profiles, Events, and Images  | Events |
+|                                      | Image |
 
 ### Organizer
 | Responsibilities | Collaborators |
