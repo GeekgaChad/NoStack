@@ -21,7 +21,7 @@
 ### Profile
 | Responsibilities | Collaborators |
 | ------------- | ------------- |
-| Contain and display a user’s personal info  | Attendee, |
+| Contain and display a user’s personal info  | Attendee |
 | Manage profile picture upload and deletion | Organizer|
 | Generate a profile picture from the profile name  | Admin |
 |                                                 | ManageImages|
@@ -42,7 +42,7 @@
 | ------------- | ------------- |
 | Scan the QR code using the QRcode scanner  | QRCodeScanner  |
 | Be able to edit profile  | Profile  |
-| Receive Notifications  | AttendeeList  |
+| Receive announcements | AttendeeList  |
 | Register for events | Event  |
 |  | Announcements  |
 
@@ -72,7 +72,7 @@
 | ------------- | ------------- |
 | Be able to generate a unique QR code for the event  | QRCodeGenerator  |
 | Monitor real-time attendance through the AttendeeList  | AttendeeList  |
-| Sends push notifications to all attendees through the app  | Announcements  |
+| Sends push announcements to all attendees through the app  | Announcements  |
 
 ### Event
 | Responsibilities | Collaborators |
@@ -156,8 +156,8 @@
 ### Announcements
 | Responsibilities | Collaborators |
 | ------------- | ------------- |
-| Sends notifications to attendees   | AttendeeList  |
-| Manages organizer interaction to edit/delete notification  | Organizer  |
-| Manages attendee interaction to to ignore, or view notification in app  | Attendee  |
+| Sends announcements to attendees   | AttendeeList  |
+| Manages organizer interaction to edit/delete announcement  | Organizer  |
+| Manages attendee interaction to to ignore, or view announcement in app  | Attendee  |
 
 
