@@ -3,10 +3,10 @@
 | Responsibilities | Collaborators |
 | ------------- | ------------- |
 | Manages the main user interface and navigation within the app  | Profile  |
-| Handles authentication and user sessions  | LogIn  |
-| Displays appropriate pages based on user roles  | Organizer Pages  |
-|  | Admin Pages  |
-|  | Attendee Pages  |
+| Handles authentication and user sessions  | Attendee  |
+| Displays appropriate pages based on user roles  | Organizer  |
+|  | Admin  |
+|  | LogIn  |
 
 ### LogIn
 | Responsibilities | Collaborators |
