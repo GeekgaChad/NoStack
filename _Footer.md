@@ -4,16 +4,17 @@
 | ------------- | ------------- |
 | Manages the main user interface and navigation within the app  | Profile  |
 | Handles authentication and user sessions  | Content Cell  |
-| Displays appropriate pages based on user roles  | Profile |
-
+| Displays appropriate pages based on user roles  |  |
 
 ***
 ### Profile
 | Responsibilities | Collaborators |
 | ------------- | ------------- |
-| Contain and display a user’s personal info  | Attendee, Organizer, Admin  |
-| Manage profile picture upload and deletion | UploadImages, Image  |
-| Generate a profile picture from the profile name  | Image |
+| Contain and display a user’s personal info  | Attendee, |
+| Manage profile picture upload and deletion | Organizer|
+| Generate a profile picture from the profile name  | Admin |
+|                                                 | UploadImages|
+|                                                 | Image|
 
 ### Profile
 | Responsibilities | Collaborators |
