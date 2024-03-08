@@ -15,3 +15,6 @@
 - [CRC Cards](https://github.com/CMPUT301W24T27/NoStack/wiki/CRC-Cards)
 - [User Interface Mockups and Storyboard](https://github.com/CMPUT301W24T27/NoStack/wiki/User-Interface-Mockup-and-Storyboard)
 - [Backlog Legend](https://github.com/CMPUT301W24T27/NoStack/wiki/Backlog-Legend)
+
+### Project Part 2 Deliverables
+- [UML Diagram] 
