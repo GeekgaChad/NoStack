@@ -17,4 +17,4 @@
 - [Backlog Legend](https://github.com/CMPUT301W24T27/NoStack/wiki/Backlog-Legend)
 
 ### Project Part 2 Deliverables
-- [UML Diagram] 
+- [UML Diagram](https://github.com/CMPUT301W24T27/NoStack/wiki/UML-Diagram) 
