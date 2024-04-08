@@ -1,10 +1,11 @@
 # User Interface Mockup and Storyboard
-[Figma Board](https://www.figma.com/file/3VFqL8q8jooDrlOVkGANBx/NoStack-Mockup?type=design&node-id=0%3A1&mode=design&t=BXix6DLgIUbsi477-1)
+[[Figma Board](https://www.figma.com/file/3VFqL8q8jooDrlOVkGANBx/NoStack-Mockup?type=design&node-id=0%3A1&mode=design&t=BXix6DLgIUbsi477-1)](https://www.figma.com/file/3VFqL8q8jooDrlOVkGANBx/NoStack-Mockup?type=design&node-id=449-3045&mode=design&t=dQKRMb45iNAtJMNp-0)
 
 ## User Interface Mockup
-![Group 192](https://github.com/CMPUT301W24T27/NoStack/assets/87257632/934615d1-c5c7-4cba-91c6-50ef1b987108)
+![Group 193](https://github.com/CMPUT301W24T27/NoStack/assets/87257632/dc995b2f-cb8e-41cf-86b4-0226970a4c95)
+
 
 
 ## Storyboard
-![Storyboard v0](https://github.com/CMPUT301W24T27/NoStack/assets/64939298/ea7837ed-bd56-4ede-8caf-25800be2d829)
+![Group 192](https://github.com/CMPUT301W24T27/NoStack/assets/87257632/1afc64a9-a54d-4c50-83be-24bbfe3661e3)
 
