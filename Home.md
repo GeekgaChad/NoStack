@@ -10,11 +10,11 @@
 | Nathan Wu      | natewu       | nwu4     |
 | Bobby Quilacio | bobby-dq     | quilacio |
 
-### Project Part 2 Deliverables
+### Project Part 2 Deliverables (Updated for Part 4)
 - [User Stories](https://github.com/orgs/CMPUT301W24T27/projects/1)
 - [CRC Cards](https://github.com/CMPUT301W24T27/NoStack/wiki/CRC-Cards)
 - [User Interface Mockups and Storyboard](https://github.com/CMPUT301W24T27/NoStack/wiki/User-Interface-Mockup-and-Storyboard)
 - [Backlog Legend](https://github.com/CMPUT301W24T27/NoStack/wiki/Backlog-Legend)
 
-### Project Part 2 Deliverables
+### Project Part 2 Deliverables (Updated for Part 4)
 - [UML Diagram](https://github.com/CMPUT301W24T27/NoStack/wiki/UML-Diagram) 
